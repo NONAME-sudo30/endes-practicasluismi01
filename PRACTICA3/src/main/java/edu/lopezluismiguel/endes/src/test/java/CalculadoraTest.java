@@ -1,14 +1,15 @@
-package src.test;
+package edu.lopezluismiguel.endes.src.test.java;
 import static org.junit.jupiter.api.Assertions.*;
 
 import edu.lopezluismiguel.endes.Calculadora;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {
 
     @Test
-    public void testSumar() {
-        assertEquals(5, Calculadora.sumar(2, 3));
+    void suma() {
+        Assertions.assertEquals(5, Calculadora.sumar(2, 3));
         assertEquals(0, Calculadora.sumar(-2, 2));
     }
 
