@@ -22,5 +22,16 @@ public class Calculadora {
         System.out.println(division(2,1));
     }
 
+/**para que su prueba unitaria funcione*/
+    public static int sumar(int i, int b) {
+        return i + b;
+    }
 
+    public static int restar(int i, int b ) {
+        return i - b;
+    }
+
+    public static int dividir(int i, int b) {
+        return i * b;
+    }
 }
