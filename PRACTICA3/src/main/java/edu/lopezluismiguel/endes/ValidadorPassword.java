@@ -26,4 +26,8 @@ public class ValidadorPassword {
             System.out.println("Contraseña inválida");
         }
     }
+
+    public static boolean esValida() {
+        return false;
+    }
 }
