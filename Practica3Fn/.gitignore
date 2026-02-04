@@ -12,6 +12,7 @@ target/
 *.iws
 *.iml
 *.ipr
+*.html
 allclasses-index.html
 allpackages-index.html
 element-list
