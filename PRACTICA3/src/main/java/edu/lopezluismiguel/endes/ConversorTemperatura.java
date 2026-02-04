@@ -10,14 +10,10 @@ package edu.lopezluismiguel.endes;
             return (fahrenheit - 32.0) * 5.0 / 9.0;
         }
 
-        static void main() {
-            double c = 25;
-            double f = 77;
 
-            System.out.println(c + " °C = " + celsiusAFahrenheit(c) + " °F");
-            System.out.println(f + " °F = " + fahrenheitACelsius(f) + " °C");
+
         }
-    }
+
 
 
 
