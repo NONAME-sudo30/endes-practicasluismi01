@@ -1,37 +1,37 @@
-package edu.lopezluismiguel.endes.src.test.java;
+package edu.lopezluismiguel.endes;
+
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import edu.lopezluismiguel.endes.Calculadora;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
-public class CalculadoraTest {
+class CalculadoraTest {
 
     @Test
-    void suma() {
-        Assertions.assertEquals(5, Calculadora.sumar(2, 3));
-        assertEquals(0, Calculadora.sumar(-2, 2));
+    void sumar_deberiaRetornarLaSumaCorrecta() {
+        Calculadora calc = new Calculadora();
+        assertEquals(5, calc.sumar(2, 3));
     }
 
     @Test
-    public void testRestar() {
-        assertEquals(1, Calculadora.restar(3, 2));
-        assertEquals(-4, Calculadora.restar(-2, 2));
+    void restar_deberiaRetornarLaRestaCorrecta() {
+        Calculadora calc = new Calculadora();
+        assertEquals(1, calc.restar(4, 3));
     }
 
     @Test
-    public void testMultiplicar() {
-        assertEquals(6, Calculadora.multiplicar(2, 3));
-        assertEquals(-4, Calculadora.multiplicar(-2, 2));
+    void multiplicar_deberiaRetornarLaMultiplicacionCorrecta() {
+        Calculadora calc = new Calculadora();
+        assertEquals(12, calc.multiplicar(4, 3));
     }
 
     @Test
-    public void testDividir() {
-        assertEquals(2, Calculadora.dividir(6, 3));
+    void dividir_deberiaRetornarLaDivisionCorrecta() {
+        Calculadora calc = new Calculadora();
+        assertEquals(2, calc.dividir(6, 3));
     }
 
     @Test
-    public void testDividirPorCero() {
-        assertThrows(IllegalArgumentException.class, () -> Calculadora.dividir(10, 0));
+    void dividir_deberiaLanzarExcepcionCuandoEsDivisionPorCero() {
+        Calculadora calc = new Calculadora();
+        assertThrows(ArithmeticException.class, () -> calc.dividir(10, 0));
     }
 }

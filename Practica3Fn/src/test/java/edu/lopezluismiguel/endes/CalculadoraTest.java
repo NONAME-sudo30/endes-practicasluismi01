@@ -1,8 +1,7 @@
 
-package edu.lopezluismiguel.endes.src.test;
+package edu.lopezluismiguel.endes;
 import static org.junit.jupiter.api.Assertions.*;
 
-import edu.lopezluismiguel.endes.Calculadora;
 import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {

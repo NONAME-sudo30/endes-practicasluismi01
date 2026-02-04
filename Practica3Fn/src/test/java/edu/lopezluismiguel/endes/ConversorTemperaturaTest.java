@@ -1,10 +1,9 @@
-package edu.lopezluismiguel.endes.src.test;
+package edu.lopezluismiguel.endes;
 
 
-import edu.lopezluismiguel.endes.ConversorTemperatura;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.* ;
 
 class ConversorTemperaturaTest {
 

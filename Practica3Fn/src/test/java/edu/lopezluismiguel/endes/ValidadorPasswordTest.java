@@ -1,11 +1,8 @@
-package edu.lopezluismiguel.endes.src.test;
+package edu.lopezluismiguel.endes;
 
 
 
-import edu.lopezluismiguel.endes.ValidadorPassword;
-
-
-    import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
     public class ValidadorPasswordTest {
