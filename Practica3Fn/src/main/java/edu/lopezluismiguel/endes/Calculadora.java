@@ -22,5 +22,6 @@ package edu.lopezluismiguel.endes;
             }
             return a / b;
         }
+
     }
 

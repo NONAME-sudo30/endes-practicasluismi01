@@ -28,6 +28,23 @@ public class CalculadoraTest {
     public void testDividir() {
         assertEquals(2, Calculadora.dividir(6, 3));
     }
+    @Test
+    public void testDividirPorCero() {
+        try {
+            Calculadora.dividir(6, 0);
+            fail("Se esperaba ArithmeticException");
+        } catch (ArithmeticException e) {
+            // Aquí validas que la excepción es la correcta
+            assertEquals("No se puede dividir por cero", e.getMessage());
+        } finally {
+            System.out.println("No se puede dividir por 0");
+        }
+    }
+
+
+
+
+
 
 
 
