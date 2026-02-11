@@ -15,19 +15,6 @@ import java.util.Scanner;
             return password.matches(regex);
         }
 
-        static void main() {
-            Scanner sc = new Scanner(System.in);
-
-            System.out.print("Introduce la contraseña: ");
-            String entrada = sc.nextLine();
-
-            if (validar(entrada)) {
-                System.out.println("Contraseña válida");
-            } else {
-                System.out.println("Contraseña inválida");
-            }
-        }
-
         public static boolean esValida() {
             return false;
         }
