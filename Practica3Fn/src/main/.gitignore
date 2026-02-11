@@ -1,52 +1,56 @@
-../../target/
+############################
+# Maven
+############################
+target/
 !.mvn/wrapper/maven-wrapper.jar
-!src/main/java/edu/lopezluismiguel/endes/src/main/**/target/
-!src/main/java/edu/lopezluismiguel/endes/src/test/**/target/
-.kotlin
+!.mvn/wrapper/maven-wrapper.properties
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# Logs
+*.log
+
+############################
+# IntelliJ IDEA
+############################
+.idea/
 *.iml
+*.iws
 *.ipr
-*.html
-allclasses-index.html
-allpackages-index.html
-element-list
-help-doc.html
-index.html
-member-search-index.js
-module-search-index.js
-overview-tree.html
-overview-summary.html
-package-search-index.js
-search.html
-tag-search-index.js
-type-search-index.js
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+
+# Excepciones útiles (opcional):
+# Si quieres mantener los runConfigurations:
+# !.idea/runConfigurations/
+
+############################
+# Eclipse (por si alguien lo abre)
+############################
 .project
-.settings
+.classpath
+.settings/
+.factorypath
+.apt_generated/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+############################
+# NetBeans
+############################
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 build/
-!src/main/java/edu/lopezluismiguel/endes/src/main/**/build/
-!src/main/java/edu/lopezluismiguel/endes/src/test/**/build/
 
-### VS Code ###
+############################
+# VS Code
+############################
 .vscode/
 
-### Mac OS ###
+############################
+# OS
+############################
+# macOS
 .DS_Store
+
+# Windows
+Thumbs.db
