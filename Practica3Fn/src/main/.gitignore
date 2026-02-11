@@ -2,6 +2,9 @@
 # Maven
 ############################
 target/
+*.class
+
+# Maven Wrapper (sí debe versionarse)
 !.mvn/wrapper/maven-wrapper.jar
 !.mvn/wrapper/maven-wrapper.properties
 
@@ -16,12 +19,8 @@ target/
 *.iws
 *.ipr
 
-# Excepciones útiles (opcional):
-# Si quieres mantener los runConfigurations:
-# !.idea/runConfigurations/
-
 ############################
-# Eclipse (por si alguien lo abre)
+# Eclipse
 ############################
 .project
 .classpath
