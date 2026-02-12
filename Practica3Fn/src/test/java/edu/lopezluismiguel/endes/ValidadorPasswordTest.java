@@ -33,6 +33,25 @@ import org.junit.jupiter.api.Test;
             assertFalse(ValidadorPassword.esValida());
         }
 
+        @Test
+        public void testValidarNull() {
+            assertFalse(false);
+        }
+
+        @Test
+        public void testValidarCorrecto() {
+            assertTrue(ValidadorPassword.validar("Abc123"));
+        }
+        @Test
+        public void TestValidarNull() {
+            assertFalse(ValidadorPassword.validar(null));
+        }
+
+        @Test
+        public void testValidarIncorrecto() {
+            assertFalse(ValidadorPassword.validar("abc"));
+        }
+
     }
 
 

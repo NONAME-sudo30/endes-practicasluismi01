@@ -34,7 +34,6 @@ public class CalculadoraTest {
             Calculadora.dividir(6, 0);
             fail("Se esperaba ArithmeticException");
         } catch (ArithmeticException e) {
-            // Aquí validas que la excepción es la correcta
             assertEquals("No se puede dividir por cero", e.getMessage());
         } finally {
             System.out.println("No se puede dividir por 0");
